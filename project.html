@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container mt-4">
+
+        
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div id="today-frame" class="content-frame">
+                    <div class="row">
+
+                        
+                        <div class="col-md-4">
+                            <div class="menu-frame">
+                                <div class="profile-section">
+                                    <img src="profile.jpg" alt="Profile" class="profile-icon">
+                                    <h3>Do-it </h3>
+                                    <h3>Hamza</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#today-frame">Today Task</a></li>
+                                    <li><a href="#upcoming-frame">Upcoming Task</a></li>
+                                    <li><a href="#profile-frame">Work</a></li>
+                                    <li><a href="#fitness-frame">Fitness</a></li>
+                                    <li><a href="#settings-frame">Settings</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-8">
+                            <h2>Today Task</h2>
+                            <div class="task-rectangle">
+                                <ul class="task-list">
+                                    <li>Work on project <span>Work</span></li>
+                                    <li>Read book <span>Personal</span></li>
+                                    <li>Attend meeting <span>Work</span></li>
+                                    <li>Buy groceries <span>Personal</span></li>
+                                    <li>Reply to emails <span>Work</span></li>
+                                </ul>
+                            </div>
+                            <div class="task-actions">
+                                <input type="text" placeholder="Task Name">
+                                <select>
+                                    <option value="work">Work</option>
+                                    <option value="personal">Personal</option>
+                                    <option value="fitness">Fitness</option>
+                                </select>
+                                <div class="date-wrapper">
+                                    <input type="date">
+                                    <span class="calendar-icon"><i class="fas fa-calendar-alt"></i></span>
+                                </div>
+                                <button>Add Task</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div id="upcoming-frame" class="content-frame">
+                    <div class="row">
+
+                        
+                        <div class="col-md-4">
+                            <div class="menu-frame">
+                                <div class="profile-section">
+                                    <img src="profile.jpg" alt="Profile" class="profile-icon">
+                                    <h3>Do-it </h3>
+                                    <h3>Hamza</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#today-frame">Today Task</a></li>
+                                    <li><a href="#upcoming-frame">Upcoming Task</a></li>
+                                    <li><a href="#profile-frame">Work</a></li>
+                                    <li><a href="#fitness-frame">Fitness</a></li>
+                                    <li><a href="#settings-frame">Settings</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-8">
+                            <h2>Upcoming Task</h2>
+                            <div class="task-rectangle">
+                                <ul class="task-list">
+                                    <li>Prepare for exam <span>Work</span></li>
+                                    <li>Complete project report <span>Work</span></li>
+                                    <li>Plan weekend trip <span>Personal</span></li>
+                                    <li>Workout at gym <span>Fitness</span></li>
+                                </ul>
+                            </div>
+                            <div class="task-actions">
+                                <input type="text" placeholder="Task Name">
+                                <select>
+                                    <option value="work">Work</option>
+                                    <option value="personal">Personal</option>
+                                    <option value="fitness">Fitness</option>
+                                </select>
+                                <div class="date-wrapper">
+                                    <input type="date">
+                                    <span class="calendar-icon"><i class="fas fa-calendar-alt"></i></span>
+                                </div>
+                                <button>Add Task</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div id="profile-settings-language-frame" class="content-frame">
+                    <div class="row">
+
+                        
+                        <div class="col-md-4">
+                            <div class="menu-frame">
+                                <div class="profile-section">
+                                    <img src="profile.jpg" alt="Profile" class="profile-icon">
+                                    <h3>Do-it </h3>
+                                    <h3>Hamza</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#profile-frame">Profile</a></li>
+                                    <li><a href="#settings-frame">Settings</a></li>
+                                    <li><a href="#language-frame">Language</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-8">
+                            <div class="task-rectangle mb-4" id="profile-frame">
+                                <h3>Profile</h3>
+                                <p><strong>Name:</strong> Hamza</p>
+                                <p><strong>Email:</strong> hamza@example.com</p>
+                                <button>Edit Profile</button>
+                            </div>
+
+                            
+                            <div class="task-rectangle mb-4" id="language-frame">
+                                <h3>Language</h3>
+                                <select>
+                                    <option value="english">English</option>
+                                    <option value="spanish">Spanish</option>
+                                    <option value="french">French</option>
+                                </select>
+                            </div>
+
+                            
+                            <div class="task-rectangle" id="settings-frame">
+                                <h3>Settings</h3>
+                                <p>Change your settings here.</p>
+                                <button>Save Settings</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>    
